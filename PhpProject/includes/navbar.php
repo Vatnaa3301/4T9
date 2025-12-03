@@ -1,7 +1,7 @@
 <header>
     <div class="header-container">
         <div class="top-bar">
-            <a href="home.php" class="logo">4T9</a>
+            <a href="index.php" class="logo">4T9</a>
             
             <div class="top-actions">
                 <div class="search-box">

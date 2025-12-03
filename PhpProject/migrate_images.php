@@ -258,7 +258,7 @@ foreach ($categories as $category) {
         </div>
 
         <a href="admin/dashboard.php" class="back-btn">Go to Admin Dashboard</a>
-        <a href="home.php" class="back-btn" style="background: #4ec9b0;">View Store</a>
+        <a href="index.php" class="back-btn" style="background: #4ec9b0;">View Store</a>
     </div>
 </body>
 </html>

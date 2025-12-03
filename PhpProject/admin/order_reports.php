@@ -430,7 +430,7 @@ function getOrderItems($pdo, $orderId) {
             <a href="dashboard.php">Add Product</a>
             <a href="view_products.php">View Products</a>
             <a href="order_reports.php">Order Reports</a>
-            <a href="../home.php">View Store</a>
+            <a href="../index.php">View Store</a>
             <a href="logout.php">Logout</a>
         </div>
     </div>

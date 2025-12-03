@@ -348,7 +348,7 @@
     <!-- CTA Section -->
     <div class="cta-section">
         <h2>Ready to Elevate Your Style?</h2>
-        <a href="home.php" class="cta-btn">Start Shopping</a>
+        <a href="index.php" class="cta-btn">Start Shopping</a>
     </div>
 
     <?php include 'includes/footer.php'; ?>
