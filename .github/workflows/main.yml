@@ -1,1 +1,36 @@
 
+name: Deploy
+
+on:
+  push:
+    branches: [ main ]
+
+env:
+  repositoryDir: D:\Clones\4T9
+  projectDir: D:\Clones\4T9\PhpProject
+  destinationDir: D:\Websites\4T9
+
+jobs:
+  deploy-runner:
+    runs-on: self-hosted  # This will use your self-hosted runner
+    
+    steps:
+    - name: Pull Repository
+      shell: powershell
+      run: |
+        Write-Host "Going to repository directory..."
+        cd "${{ env.repositoryDir }}"
+        Write-Host "Current directory: $(Get-Location)"
+        Write-Host "Pulling latest code..."
+        git pull origin main
+
+    - name: Deploy Application
+      shell: powershell
+      run: |
+        Write-Host "Going to repo directory..."
+        cd "${{ env.repositoryDir }}"
+        Write-Host "Current directory: $(Get-Location)"
+        Write-Host "Ready to copy build to deployment directory..."
+        Write-Host "Copying files from project folder to ${{ env.destinationDir }}"
+        Copy-Item -Path "${{ env.projectDir }}" -Destination "${{ env.destinationDir }}" -Recurse -Force
+        Write-Host "Files copied successfully! Existing files have been replaced."
