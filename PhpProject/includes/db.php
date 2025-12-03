@@ -2,7 +2,7 @@
 $host = 'localhost';
 $dbname = 'fashionstore_db';
 $username = 'root';
-$password = '';
+$password = '1234';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
